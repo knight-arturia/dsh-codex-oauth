@@ -1,0 +1,9 @@
+# Bundle layer for @deepseek-ai/dsh-codex-oauth.
+#
+# Mounts the plugin row when the package is listed in a profile's
+# `dsh.profile.bundles` (installed via `dsh plugin add`). When wiring the
+# plugin by hand instead, add the same row to the profile's own
+# `cordis.patch.yml` — never both, or the entry id would be inserted twice.
+- insert:
+    - id: codex-oauth
+      name: '@deepseek-ai/dsh-codex-oauth'
